@@ -1,0 +1,53 @@
+<head>
+     <link rel="icon" href="/img/cloudy.png"/>
+     <title>About</title>
+    <style>  
+     Body  
+        {  
+         color: #333333;
+         font-family: arial;
+         max-width: 650px;
+         margin: 0 auto;
+         padding: 0 16px;
+         display: flex;
+         flex-direction: column;
+         min-height: 100vh;
+        } 
+        footer {
+           color: #888888;
+           border-top: 1px solid #eeeeee;
+            padding: 16px 0;
+            margin-top: 16px;
+        } 
+        header {
+            margin-top: 16px;
+            margin-bottom: 48px;
+
+        }
+        h1 {
+            font-size: 32px;
+            margin-bottom: 16px;
+        }
+        header a {
+            color: #888888;
+            margin-right: 16px;
+            text-decoration: none;
+        }
+        img {
+            width: 250px; 
+        }
+        .main-content {
+            flex-grow: 1;
+        }
+</style>
+    <script src="js/index.js"></script>
+</head>
+<body>
+     <div class="main-content">
+          {{>header}}
+          <h1>About me</h1>
+          <img src="/img/me.png"/>
+     </div>
+
+     {{>footer}}
+</body>
